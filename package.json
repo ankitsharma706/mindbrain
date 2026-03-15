@@ -6,14 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "next lint"
   },
   "dependencies": {
-    "@eslint/eslintrc": "^3.3.5",
     "axios": "^1.13.6",
     "framer-motion": "^12.36.0",
     "leaflet": "^1.9.4",
-    "next": "15.2.4",
+    "next": "^16.1.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-leaflet": "^5.0.0",
@@ -23,7 +22,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "eslint": "^9",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "15.2.5",
     "tailwindcss": "^4"
   }
 }

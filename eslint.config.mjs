@@ -10,16 +10,12 @@ const compat = new FlatCompat({
   baseDirectory: __dirname,
 });
 
-const eslintConfig = defineConfig([
-  ...compat.extends("next/core-web-vitals"),
-  // Override default ignores of eslint-config-next.
+export default defineConfig([
+  ...compat.extends("eslint-config-next/core-web-vitals"),
   globalIgnores([
-    // Default ignores of eslint-config-next:
     ".next/**",
     "out/**",
     "build/**",
     "next-env.d.ts",
   ]),
 ]);
-
-export default eslintConfig;
