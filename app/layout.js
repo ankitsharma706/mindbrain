@@ -1,5 +1,6 @@
 import "./globals.css";
 import AuthGuard from './components/AuthGuard';
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata = {
   title: "MarketMind AI — Smart Market Analysis Platform",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <AuthGuard>{children}</AuthGuard>
+        <Analytics />
       </body>
     </html>
   );
